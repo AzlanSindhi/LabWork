@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <title>Using Paragraph</title>
+    <style>  th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        }
+</style>
+</head>
+<body>
+    <p>This is how you can use paragraph in HTML</p>
+    <h5>HEADERS ARE DIFFERENT FROM PARAGRAPH</h5>
+    <p>Paragraph are used to describe content whereas Header gives time of the content</p>
+    <p>The grade is the avereage of Physics, Chemistry & Mathematics Marks<br> Avreage &gt; or =90% is A.<br>Average &lt; 90 and &gt;= 75 is B.</p>
+    <p>1. Introduction to HTML</p>
+        <ol style="list-style-type: lower-alpha;">
+            <li>Introduction to HTML tags</li>
+            <li>Introduction to the World Wide Web</li>
+            <ol style="list-style-type: disc;">
+                <li>Formatting Text</li>
+                <li>Enchancing the text</li>
+            </ol>
+        </ol>
+        <table style=" width: 100%;
+            border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Clips</th>
+                    <th>Staples</th>
+                    <th>Pens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Quarter 1</td>
+                    <td>Jan</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Feb</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mar</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="quarter" rowspan="3">Quarter 2</td>
+                    <td>Apr</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="quarter" rowspan="3">Quarter 3</td>
+                    <td>July</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Aug</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sept</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="quarter" rowspan="3">Quarter 4</td>
+                    <td>Oct</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Nov</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dec</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">ABC Limited</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
