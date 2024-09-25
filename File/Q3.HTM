@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            align-self: center;
+            row-gap: 20px;
+        }
+        td {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            margin-left: auto;
+            padding-right: 30px;
+        }
+        body {
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            margin-left: 35%;
+        }
+    </style>
+    <script>
+        function validate(){
+            
+    
+        if(form.fname.value == "" || form.lname.value == "" || form.address.value == "" || form.country.value == ""){
+            alert("Please fill all the details");
+        }
+        if(form.gender[0].checked == false && form.gender[1].checked == false && form.gender[2].checked == false){
+            alert("Please select gender");
+        }
+        if(form.hobby.value == ""){
+            alert("Please select hobby");
+        }
+        if(form.qualification.value == ""){
+            alert("Please select qualification");
+        }
+        if(form.occupation.value == ""){
+            alert("Please select occupation");
+        }
+        if(form.payment[0].checked == false && form.payment[1].checked == false){
+            alert("Please select payment");
+        }
+    }
+
+    </script>
+</head>
+<body>
+    
+    <form name="form">
+    <table>
+        <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" id="lname" name="lname"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea id="address" name="address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="africa">Africa</option>
+                    <option value="usa">USA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="text" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone</label></td>
+            <td><input type="text" id="phone" name="phone"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="hobby">Hobby</label></td>
+            <td><textarea id="hobby" name="hobby"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="qual">Qualification</label></td>
+            <td>
+                <select id="qual" name="qual">
+                    <option value="graduate">Graduate</option>
+                    <option value="dropout">Dropout</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="occupation">Occupation</label></td>
+            <td>
+                <select id="occupation" name="occupation">
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="user">User ID</label></td>
+            <td><input type="text" id="user" name="user"></td>
+        </tr>
+        <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input type="password" id="pass" name="pass"></td>
+        </tr>
+        <tr>
+            <td><label for="payment">Payment Method</label></td>
+            <td>
+                <input type="radio" id="mastercard" name="payment" value="mastercard">
+                <label for="mastercard">Master Card</label>
+                <input type="radio" id="visacard" name="payment" value="visa">
+                <label for="visacard">Visa Card</label>
+            </td>
+        </tr>
+        <tr><td colspan="2"><input type="submit" value="Submit" onclick="validate()"><input type="reset" value="Reset" aria-colspan="2"></td></tr>
+    </table>
+</form>
+</body>
+</html>

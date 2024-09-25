@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double and Square</title>
+</head>
+<body>
+    <input type="number" id="number" placeholder="Enter a number">
+    <div>
+        <input type="checkbox" id="double" name="operation">
+        <label for="double">Double</label>
+        <input type="checkbox" id="square" name="operation">
+        <label for="square">Square</label>
+    </div>
+    <button onclick="performOperations()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function performOperations() {
+            const num = parseFloat(document.getElementById('number').value);
+            let result = '';
+
+            if (document.getElementById('double').checked) {
+                result += `Double: ${num * 2}\n`;
+            }
+            if (document.getElementById('square').checked) {
+                result += `Square: ${num * num}`;
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>

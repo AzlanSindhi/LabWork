@@ -1,0 +1,14 @@
+p{
+    font-size: medium;
+    font:bolder; 
+    font-style: italic;
+    text-align: center;
+    text-indent: 5%;
+    vertical-align: middle;
+}
+table tr td{
+    border: 5px solid;
+    border-width: 10px;
+    border-bottom: 6px;
+    border-color: salmon;
+}

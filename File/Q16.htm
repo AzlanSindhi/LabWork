@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Drawer</title>
+</head>
+<body>
+    <input type="number" id="rows" placeholder="Enter number of rows">
+    <button onclick="drawPattern()">Draw Pattern</button>
+    <pre id="result"></pre>
+
+    <script>
+        function drawPattern() {
+            const rows = parseInt(document.getElementById('rows').value);
+            let pattern = '';
+
+            // Pattern 1: Triangle
+            for (let i = 1; i <= rows; i++) {
+                pattern += '*'.repeat(i) + '\n';
+            }
+
+            // Pattern 2: Reverse Triangle
+            for (let i = rows; i >= 1; i--) {
+                pattern += '*'.repeat(i) + '\n';
+            }
+
+            // Pattern 3: Increasing and Decreasing Sequence
+            for (let i = 1, k = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++, k++) {
+                    pattern += k + ' ';
+                }
+                pattern += '\n';
+            }
+
+            document.getElementById('result').textContent = pattern;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Subscription Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Magazine Subscription Form</h2>
+        <form>
+            <!-- Personal Information Section -->
+            <div class="form-group row">
+                <label for="fname" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="address" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="city" class="col-sm-2 col-form-label">City</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                </div>
+                <label for="state" class="col-sm-2 col-form-label">State</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="state" placeholder="Enter your state">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="pin" class="col-sm-2 col-form-label">Pin No</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="pin" placeholder="Enter your pin number">
+                </div>
+                <label for="telephone" class="col-sm-2 col-form-label">Telephone No</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="telephone" placeholder="Enter your telephone number">
+                </div>
+            </div>
+            
+            <!-- Magazine Selection Section -->
+            <div class="form-group">
+                <label>Magazines Subscribed To (Choose one or more):</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="tech-times" id="tech-times">
+                    <label class="form-check-label" for="tech-times">Tech Times</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="health-digest" id="health-digest">
+                    <label class="form-check-label" for="health-digest">Health Digest</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="travel-world" id="travel-world">
+                    <label class="form-check-label" for="travel-world">Travel World</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="cooking-today" id="cooking-today">
+                    <label class="form-check-label" for="cooking-today">Cooking Today</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="sports-weekly" id="sports-weekly">
+                    <label class="form-check-label" for="sports-weekly">Sports Weekly</label>
+                </div>
+            </div>
+
+            <!-- Subscription Duration Section -->
+            <div class="form-group">
+                <label>Duration of Subscription:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="duration" id="one-year" value="1yr">
+                    <label class="form-check-label" for="one-year">1 Year</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="duration" id="three-years" value="3yrs">
+                    <label class="form-check-label" for="three-years">3 Years</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="duration" id="five-years" value="5yrs">
+                    <label class="form-check-label" for="five-years">5 Years</label>
+                </div>
+            </div>
+
+            <!-- Payment Details Section -->
+            <div class="form-group">
+                <label>Payment Method:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment" id="demand-draft" value="demand-draft">
+                    <label class="form-check-label" for="demand-draft">Demand Draft</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment" id="credit-card" value="credit-card">
+                    <label class="form-check-label" for="credit-card">Credit Card</label>
+                </div>
+            </div>
+
+            <!-- Confirm or Cancel Buttons -->
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="button" class="btn btn-primary" onclick="confirmOrder()">Confirm Order</button>
+                    <button type="reset" class="btn btn-secondary">Cancel Order</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function confirmOrder() {
+            // Implement order confirmation logic here
+            alert("Order Confirmed!");
+        }
+    </script>
+</body>
+</html>
